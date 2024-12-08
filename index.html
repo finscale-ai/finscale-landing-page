@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>FinScale - Early Access</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            max-width: 600px;
+            color: #333;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup-form input[type="email"] {
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            width: 250px;
+        }
+
+        .signup-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #38b6ff;
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .signup-form button:hover {
+            background: #1f5cb8;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="assets/fs-logo.png" alt="FinScale Logo" class="logo" width="200" />
+
+    <div class="tagline">Where AI simplifies finance, empowering founders to drive growth.</div>
+    
+    <!-- <form class="signup-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Sign Up for Early Access</button>
+    </form> -->
+
+    <!-- Netlify form setup -->
+    <form name="signup" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <input type="hidden" name="form-name" value="signup">
+        <button type="submit">Sign Up for Early Access</button>
+    </form>
+
+    
+</body>
+</html>
+
